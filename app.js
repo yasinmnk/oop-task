@@ -12,7 +12,7 @@ class Ucgen {
     this.nok3 = nok3;
   }
 
-  cevreHesap = function () {
+  cevreHesaplama = function () {
     const kenar1 = Math.sqrt(Math.pow(2, a2 - a1) + Math.pow(2, b2 - b1));
     const kenar2 = Math.sqrt(Math.pow(2, a3 - a1) + Math.pow(2, b3 - b1));
     const kenar3 = Math.sqrt(Math.pow(2, a3 - a2) + Math.pow(2, b3 - b2));
@@ -21,7 +21,7 @@ class Ucgen {
     return cevre;
   };
 
-  alanHesap = function () {
+  alanHesaplama = function () {
     const alan =
       (1 / 2) * (a1 * b2 + a2 * b3 + a3 * b1 - (b1 * a2 + b2 * a3 + b3 * a1));
     return alan;
@@ -40,5 +40,5 @@ const b3 = nokta3.b;
 
 const ucgen = new Ucgen(nokta1, nokta2, nokta3);
 
-console.log(" Çevre = " + ucgen.cevreHesap());
-console.log(" Alan= " + ucgen.alanHesap());
+console.log(" Çevre = " + ucgen.cevreHesaplama());
+console.log(" Alan= " + ucgen.alanHesaplama());
