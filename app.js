@@ -13,9 +13,9 @@ class Ucgen {
   }
 
   cevreHesaplama = function () {
-    const kenar1 = Math.sqrt(Math.pow(2, a2 - a1) + Math.pow(2, b2 - b1));
-    const kenar2 = Math.sqrt(Math.pow(2, a3 - a1) + Math.pow(2, b3 - b1));
-    const kenar3 = Math.sqrt(Math.pow(2, a3 - a2) + Math.pow(2, b3 - b2));
+    const kenar1 = Math.sqrt(Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
+    const kenar2 = Math.sqrt(Math.pow(a3 - a1, 2) + Math.pow(b3 - b1, 2));
+    const kenar3 = Math.sqrt(Math.pow(a3 - a2, 2) + Math.pow(b3 - b2, 2));
 
     const cevre = kenar1 + kenar2 + kenar3;
     return cevre;
