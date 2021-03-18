@@ -5,6 +5,7 @@ class Nokta {
   }
 }
 
+
 class Ucgen {
   constructor(nok1, nok2, nok3) {
     this.nok1 = nok1;
