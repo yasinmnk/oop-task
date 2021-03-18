@@ -4,6 +4,7 @@ class Nokta {
     this.b = b;
   }
 }
+//ddeneme
 
 class Ucgen {
   constructor(nok1, nok2, nok3) {
